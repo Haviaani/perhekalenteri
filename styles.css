@@ -1,7 +1,37 @@
 body {
-    background-color: rgb(255, 136, 80);
+    background-color: rgba(255, 135, 80, 0.5);
+    max-width: max-content;
 }
 
 footer {
     font-size: 80%;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 5px 0px 15px 0px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+}
+
+.form_grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 10px;
+    row-gap: 5px;
+}
+
+.form_button {
+    margin: 15px 0 5px 0;
+    flex: 1;
+}
+
+.form input, select, textarea {
+    width: 100%;
+    box-sizing: border-box;
 }
